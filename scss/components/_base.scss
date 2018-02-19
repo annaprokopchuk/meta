@@ -1,0 +1,71 @@
+// -------BASE--------
+html {
+  box-sizing: border-box;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 72px;
+  letter-spacing: 7px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 33px;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $container-padding;
+}
+
+.card-image, .section-background {
+  height: 100%;
+  width: 100%;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.font-size18 {
+  font-size: 18px;
+}

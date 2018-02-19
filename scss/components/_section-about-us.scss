@@ -1,0 +1,75 @@
+.section-about-us {
+  border-top: 2px solid #0094da;
+  .section-body {
+    display: flex;
+  }
+  .section-left {
+    min-width: 300px;
+    max-width: 600px;
+    padding-right: 50px;
+    max-height: 440px;
+  }
+  .section-right {
+    max-width: 600px;
+    padding: 55px 20px 20px;
+  }
+  .description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: $color-light;
+  }
+  .description:last-child {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .card-image img {
+    max-height: 440px;
+  }
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.section-title {
+  padding-left: 30px;
+  letter-spacing: 4px;
+  line-height: 1;
+  position: relative;
+  color: $title-color;
+  margin-bottom: 40px;
+}
+.section-title:before {
+  content: "";
+  width: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $color-primary;
+}
+
+@media (max-width:970px) {
+  .section-about-us {
+    .section-left {
+      margin-bottom: 30px;
+      padding-right: 0;
+    }
+    .section-body {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .section-right {
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    .section-content {
+      align-items: center;
+    }
+    .description {
+      text-align: center;
+    }
+  }
+}

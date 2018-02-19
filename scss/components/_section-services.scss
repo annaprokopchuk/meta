@@ -1,0 +1,36 @@
+.section-services {
+  padding: 0;
+  position: relative;
+  color: $color-inverse;
+  .section-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-background {
+    filter: blur(6px);
+  }
+  .section-foreground {
+    position: relative;
+    padding: 90px 0 60px 0;
+    .section-title {
+      color: $color-inverse;
+    }
+    .section-title:before {
+      display: none;
+    }
+  }
+  .description {
+    font-size: 18px;
+    line-height: 1.5;
+    span {
+      font-weight: 700;
+    }
+  }
+  .section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

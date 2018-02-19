@@ -1,0 +1,76 @@
+.list-social {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  li {
+    margin: 0 5px;
+    border-radius: 50%;
+  }
+  li:hover {
+    background-color: #fff;
+  }
+  li:hover svg use {
+    fill: #15acf3;
+  }
+}
+
+// -------
+.services-list {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .services-item {
+    width: calc(100% / 4 - 30px);
+    margin: 0 15px;
+    min-width: 270px;
+    margin-bottom: 30px;
+  }
+}
+
+.card-services-list {
+  padding-left: 0;
+  list-style: none;
+  .list-item {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 16px;
+    span {
+      font-size: 12px;
+    }
+  }
+  .list-item:before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    background-image: url("../images/spell-check.svg");
+  }
+}
+
+// ---------------------
+.list-references-services {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .list-item {
+    width: calc(100% / 2 - 30px);
+    margin: 0 15px;
+    min-width: 270px;
+    max-width: 570px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 970px) {
+  .list-references-services {
+    .list-item {
+      width: calc(100% / 1 - 30px);
+    }
+  }
+}
