@@ -60,6 +60,7 @@
   .slide {
     position: relative;
     height: 100vh;
+    min-height: 620px;
     color: $color-inverse;
   }
   .slide-background {
@@ -88,7 +89,7 @@
   }
   .slide-foreground {
     position: absolute;
-    top: 0;
+    top: 130px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -121,7 +122,7 @@
         top: 0;
         bottom: 0;
         right: 0;
-        background-color: rgba($color: #fff, $alpha: 0.7)
+        background-color: rgba($color: #fff, $alpha: 0.7);
       }
       li:last-child:after {
         display: none;
@@ -134,6 +135,48 @@
       align-items: center;
       min-height: 350px;
       text-align: center;
+    }
+  }
+}
+
+@media (max-width:970px) {
+  .slide-content {
+    .title {
+      font-size: 60px;
+    }
+  }
+  .owl-carousel .owl-dots {
+    bottom: 2%;
+  }
+}
+@media (max-width:640px) {
+  .slide-content {
+    .title {
+      font-size: 46px;
+    }
+  }
+  .owl-carousel .slide-foreground .advantages-list{
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  .owl-carousel .slide-foreground .advantages-list li {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width:500px) {
+  .slide-content {
+    .title {
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width:350px) {
+  .slide-content {
+    .title {
+      font-size: 23px;
     }
   }
 }

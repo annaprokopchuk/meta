@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css"/>
+    
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
@@ -159,53 +161,61 @@
             </div>
           </div>
           <div class="hero-foreground">
-            <div class="navbar">
+            <div class="navbar" data-uk-sticky>
               <div class="container">
                 <div class="navbar-container">
                   <div class="navbar-left">
                     <a href="#" class="navbar-brand">
-                      <img src="images/logo-invers.png" alt="">
+                      <img src="images/logo-invers.png" alt="logo">
+                    </a>
+                    <a href="#" class="navbar-brand navbar-brand-primary">
+                      <img src="images/logo-primary.png" alt="logo">
                     </a>
                   </div>
                   <div class="navbar-right">
-                    <ul class="navbar-nav">
-                      <li><a href="#">HOME</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Careers</a></li>
-                      <li><a href="#">CONTACT</a></li>
-                    </ul>
-                    <div class="navbar-action">
-                      <div class="navbar-dropdown">En
-                        <!-- <div class="dropdown dropdown-lang" uk-dropdown>
-                          <a href="#" class="dropdown-button">EN</a>
-                          <div class="uk-dropdown uk-dropdown-bottom-left">
-                            <ul class="dropdown-list">
-                              <li><a href="#">FR</a></li>
-                              <li><a href="#">de</a></li>
-                              <li><a href="#">fi</a></li>
-                              <li><a href="#">lv</a></li>
-                              <li><a href="#">ee</a></li>
-                              <li><a href="#">pt</a></li>
-                            </ul>
-                          </div>
-                        </div> -->
-                      </div>
-                      <ul class="list-social">
-                        <li>
-                          <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 38 38"><defs>
-                              <path id="ea4aa" d="M1500 1391.5c0 9.65-7.85 17.5-17.5 17.5s-17.5-7.85-17.5-17.5 7.85-17.5 17.5-17.5 17.5 7.85 17.5 17.5zm-7.69-6.09c-.72.32-1.5.54-2.3.64a4.05 4.05 0 0 0 1.76-2.23c-.78.46-1.64.8-2.55.97a4.03 4.03 0 0 0-6.87 3.68 11.44 11.44 0 0 1-8.3-4.21 4.01 4.01 0 0 0 1.25 5.38 4 4 0 0 1-1.83-.5v.04a4.03 4.03 0 0 0 3.23 3.95 4.03 4.03 0 0 1-1.82.07c.52 1.6 2 2.77 3.77 2.8a8.09 8.09 0 0 1-5.97 1.67 11.4 11.4 0 0 0 6.18 1.8c7.4 0 11.46-6.13 11.46-11.45l-.01-.53a8.1 8.1 0 0 0 2-2.08z"/></defs>
-                              <g><g opacity=".5" transform="translate(-1463 -1372)"><use fill="#fff" xlink:href="#ea4aa"/></g></g></svg>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 38 38"><defs>
-                              <path id="uyy6a" d="M1545 1391.5c0 9.65-7.85 17.5-17.5 17.5s-17.5-7.85-17.5-17.5 7.85-17.5 17.5-17.5 17.5 7.85 17.5 17.5zm-12.78-2.97h-3.21v-2.1c0-.8.52-.98.9-.98h2.26v-3.49h-3.13c-3.46 0-4.25 2.59-4.25 4.25v2.32h-2v3.59h2v10.14h4.21v-10.14h2.85z"/></defs>
-                              <g><g opacity=".5" transform="translate(-1508 -1372)"><use fill="#fff" xlink:href="#uyy6a"/></g></g></svg>
-                          </a>
-                        </li>
+                    <a class="navbar-toggler" href="#navbar-collapse" data-toggler="">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" fill="#fff" viewBox="0 0 24 24">
+                      <title>menu</title>
+                      <path d="M21 11h-18c-0.55 0-1 0.45-1 1s0.45 1 1 1h18c0.55 0 1-0.45 1-1s-0.45-1-1-1z"></path>
+                      <path d="M3 7h18c0.55 0 1-0.45 1-1s-0.45-1-1-1h-18c-0.55 0-1 0.45-1 1s0.45 1 1 1z"></path>
+                      <path d="M21 17h-18c-0.55 0-1 0.45-1 1s0.45 1 1 1h18c0.55 0 1-0.45 1-1s-0.45-1-1-1z"></path>
+                      </svg>
+                    </a>
+                    <div class="navbar-collapse" id="navbar-collapse">
+                      <ul class="navbar-nav">
+                        <li class="is-active"><a href="#">HOME</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">CONTACT</a></li>
                       </ul>
+                      <div class="navbar-action">
+                        <div class="navbar-dropdown">
+                          <ul class="dropdown">
+                            <li class="dropdown-list"><a href="#">En</a>
+                              <ul class="dropdown-item">
+                                <li><a href="#">FR</a></li>
+                                <li><a href="#">de</a></li>
+                                <li><a href="#">fi</a></li>
+                                <li><a href="#">lv</a></li>
+                                <li><a href="#">ee</a></li>
+                                <li><a href="#">pt</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                        <ul class="list-social">
+                          <li class="twitter">
+                            <a href="#">
+                              <span class="icon-twitter"></span>
+                            </a>
+                          </li>
+                          <li class="facebook">
+                            <a href="#">
+                              <span class="icon-facebook"></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -548,19 +558,19 @@
                     <div class="card-form">
                       <form action="#" class="form">
                         <div class="form-group">
-                          <input type="text" required="" class="form-item">
+                          <input type="text" required="" class="form-item is-empty is-error">
                           <label class="placeholder">Name</label>
                         </div>
                         <div class="form-group">
-                          <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="" class="form-item is-empty">
+                          <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="" class="form-item is-empty is-error">
                           <label class="placeholder">Email</label>
                         </div>
                         <div class="form-group">
-                          <input type="text" required="" class="form-item">
+                          <input type="text" required="" class="form-item is-empty is-error">
                           <label class="placeholder">Subject</label>
                         </div>
                         <div class="form-group form-massage">
-                          <input type="text" required="" class="form-item">
+                          <input type="text" required="" class="form-item is-empty is-error">
                           <label class="placeholder">Message</label>
                         </div>
                         <div class="form-captcha">
@@ -582,18 +592,14 @@
         <div class="container">
           <div class="footer-content">
             <ul class="list-social">
-              <li>
+              <li class="twitter">
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 38 38"><defs>
-                    <path id="ea4aa" d="M1500 1391.5c0 9.65-7.85 17.5-17.5 17.5s-17.5-7.85-17.5-17.5 7.85-17.5 17.5-17.5 17.5 7.85 17.5 17.5zm-7.69-6.09c-.72.32-1.5.54-2.3.64a4.05 4.05 0 0 0 1.76-2.23c-.78.46-1.64.8-2.55.97a4.03 4.03 0 0 0-6.87 3.68 11.44 11.44 0 0 1-8.3-4.21 4.01 4.01 0 0 0 1.25 5.38 4 4 0 0 1-1.83-.5v.04a4.03 4.03 0 0 0 3.23 3.95 4.03 4.03 0 0 1-1.82.07c.52 1.6 2 2.77 3.77 2.8a8.09 8.09 0 0 1-5.97 1.67 11.4 11.4 0 0 0 6.18 1.8c7.4 0 11.46-6.13 11.46-11.45l-.01-.53a8.1 8.1 0 0 0 2-2.08z"/></defs>
-                    <g><g opacity=".5" transform="translate(-1463 -1372)"><use fill="#fff" xlink:href="#ea4aa"/></g></g></svg>
+                  <span class="icon-twitter"></span>
                 </a>
               </li>
-              <li>
+              <li class="facebook">
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 38 38"><defs>
-                    <path id="uyy6a" d="M1545 1391.5c0 9.65-7.85 17.5-17.5 17.5s-17.5-7.85-17.5-17.5 7.85-17.5 17.5-17.5 17.5 7.85 17.5 17.5zm-12.78-2.97h-3.21v-2.1c0-.8.52-.98.9-.98h2.26v-3.49h-3.13c-3.46 0-4.25 2.59-4.25 4.25v2.32h-2v3.59h2v10.14h4.21v-10.14h2.85z"/></defs>
-                    <g><g opacity=".5" transform="translate(-1508 -1372)"><use fill="#fff" xlink:href="#uyy6a"/></g></g></svg>
+                  <span class="icon-facebook"></span>
                 </a>
               </li>
             </ul>
@@ -606,7 +612,7 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="js/uikit/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script>
     <script src="OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
     <script src="bower_components/progressbar.js/dist/progressbar.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

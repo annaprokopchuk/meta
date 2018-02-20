@@ -18,23 +18,11 @@
   font-weight: 400;
   color: $color-light;
 }
-// .form-item {
-//   position: relative;
-// }
-// .form-group:before {
-//   content: "Error";
-//   color: red;
-//   font-size: 14px;
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   display: none;
-//   z-index: 1;
-//   font-weight: 600;
-// }
-
-// input:invalid::before {
-  
+// .form input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='email']).is-error, 
+// .form select.is-error, 
+// .form textarea.is-error {
+//   border-color: red;
+//   background-image: url("../images/icon.png");
 // }
 
 .placeholder {
