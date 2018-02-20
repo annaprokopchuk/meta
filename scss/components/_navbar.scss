@@ -32,9 +32,11 @@
     display: flex;
     margin: 0;
     li {
-      padding: 20px 6px;
       margin: 0 25px;
       position: relative;
+      a {
+        padding: 20px 6px;
+      }
     }
     li::before {
       display: block;

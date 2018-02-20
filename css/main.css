@@ -784,9 +784,10 @@ a {
   display: flex;
   margin: 0; }
   .navbar .navbar-nav li {
-    padding: 20px 6px;
     margin: 0 25px;
     position: relative; }
+    .navbar .navbar-nav li a {
+      padding: 20px 6px; }
   .navbar .navbar-nav li::before {
     display: block;
     content: "";
