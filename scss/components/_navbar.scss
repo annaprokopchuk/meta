@@ -97,10 +97,9 @@
   list-style: none;
   width: 100%;
   top: 100%;
-  opacity: 0;
   background-color: $color-primary;
   border-radius: 0 0 15px 15px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
@@ -127,7 +126,7 @@
   border-radius: 15px 15px 0 0;
   background-color: $color-primary;
   .dropdown-item {
-    opacity: 1;
+    display: flex;
   }
 }
 
@@ -205,13 +204,12 @@
     .is-show {
       width: 100%;
     }
-  }
-}
-@media (max-width: 540px) {
-  .navbar {   
+    .navbar-container {
+      min-height: 100px;
+    }
     .navbar-brand {
-      width: 210px;
-      height: 63px;
+      width: 200px;
+      height: 59px;
     }
   }
 }

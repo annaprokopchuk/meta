@@ -7,15 +7,15 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="owl_carousel/dist/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="owl_carousel/dist/assets/owl.theme.default.min.css"/>
     
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
     <div class="wrapper">
       <main class="main">
-        <div class="hero">
+        <div class="hero" id="hero">
           <div class="hero-background">
             <div class="owl-carousel owl-theme">
               <div class="slider-item">
@@ -45,8 +45,8 @@
                           <li>Высокая удовлетворенность Клиентов</li>
                         </div>
                         <div class="button-group">
-                          <div class="button button-primary">Наши услуги</div>
-                          <div class="button button-overlay">Контакты</div>
+                          <a href="#" class="button button-primary">Наши услуги</a>
+                          <a href="#" class="button button-overlay">Контакты</a>
                         </div>
                       </div>
                     </div>
@@ -80,8 +80,8 @@
                           <li>Высокая удовлетворенность Клиентов</li>
                         </div>
                         <div class="button-group">
-                          <div class="button button-primary">Наши услуги</div>
-                          <div class="button button-overlay">Контакты</div>
+                          <a href="#" class="button button-primary">Наши услуги</a>
+                          <a href="#" class="button button-overlay">Контакты</a>
                         </div>
                       </div>
                     </div>
@@ -115,8 +115,8 @@
                           <li>Высокая удовлетворенность Клиентов</li>
                         </div>
                         <div class="button-group">
-                          <div class="button button-primary">Наши услуги</div>
-                          <div class="button button-overlay">Контакты</div>
+                          <a href="#" class="button button-primary">Наши услуги</a>
+                          <a href="#" class="button button-overlay">Контакты</a>
                         </div>
                       </div>
                     </div>
@@ -150,8 +150,8 @@
                           <li>Высокая удовлетворенность Клиентов</li>
                         </div>
                         <div class="button-group">
-                          <div class="button button-primary">Наши услуги</div>
-                          <div class="button button-overlay">Контакты</div>
+                          <a href="#" class="button button-primary">Наши услуги</a>
+                          <a href="#" class="button button-overlay">Контакты</a>
                         </div>
                       </div>
                     </div>
@@ -183,10 +183,10 @@
                     </a>
                     <div class="navbar-collapse" id="navbar-collapse">
                       <ul class="navbar-nav">
-                        <li class="is-active"><a href="#">HOME</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li class="is-active"><a href="#hero" uk-scroll>HOME</a></li>
+                        <li><a href="#section-services" uk-scroll>Services</a></li>
+                        <li><a href="#section-references-services" uk-scroll>Careers</a></li>
+                        <li><a href="#section-contacts" uk-scroll>CONTACT</a></li>
                       </ul>
                       <div class="navbar-action">
                         <div class="navbar-dropdown">
@@ -243,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="section section-services">
+        <div class="section section-services" id="section-services">
           <div class="section-background">
             <img src="images/bg-img-1.jpg" alt="images">
           </div>
@@ -346,7 +346,7 @@
           </div>
           
         </div>
-        <div class="section section-references-services">
+        <div class="section section-references-services" id="section-references-services">
           <div class="container">
             <div class="section-content">
               <div class="list-references-services">
@@ -508,7 +508,7 @@
             </div>
           </div>
         </div>
-        <div class="section section-contacts">
+        <div class="section section-contacts" id="section-contacts">
           <div class="section-background">
             <img src="images/bg-img-2.jpg" alt="">
           </div>
@@ -570,7 +570,8 @@
                           <label class="placeholder">Subject</label>
                         </div>
                         <div class="form-group form-massage">
-                          <input type="text" required="" class="form-item is-empty is-error">
+                          <textarea rows="3" cols="45" name="text" class="form-item is-empty is-error"></textarea>
+                          <!-- <input type="text" required="" class="form-item is-empty is-error"> -->
                           <label class="placeholder">Message</label>
                         </div>
                         <div class="form-captcha">
@@ -613,7 +614,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script>
-    <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="owl_carousel/dist/owl.carousel.min.js"></script>
     <script src="bower_components/progressbar.js/dist/progressbar.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
