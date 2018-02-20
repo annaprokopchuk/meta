@@ -1,0 +1,16 @@
+{
+  "name": "meta",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "ignore": [
+    "bower_components"
+  ],
+  "dependencies": {
+    "owl.carousel": "^2.2.1",
+    "progressbar.js": "^1.0.1"
+  },
+  "devDependencies": {
+  
+  }
+}
