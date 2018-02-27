@@ -502,7 +502,8 @@ a {
   color: #000;
   border-radius: 2px;
   min-width: 225px;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 .button:hover {
   border: 1px solid #0094da;
